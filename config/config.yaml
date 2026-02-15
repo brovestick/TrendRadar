@@ -100,17 +100,33 @@ rss:
     - id: "hacker-news"
       name: "Hacker News"
       url: "https://hnrss.org/frontpage"
-      # max_age_days: 1               # 示例：只推送1天内的文章
-
-    - id: "ruanyifeng"
-      name: "阮一峰的网络日志"
-      url: "http://www.ruanyifeng.com/blog/atom.xml"
-      # max_age_days: 7               # 示例：推送7天内的文章（更新较慢的博客）
+      max_age_days: 1               # 示例：只推送1天内的文章
     
     - id: "yahoo-finance"
       name: "雅虎财经"
       url: "https://finance.yahoo.com/news/rssindex"
       enabled: false                  # 禁用
+      max_age_days: 1 
+      
+    - id: "CNBC-finance"
+      name: "CNBC Finance News"
+      url: "https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=15839069"
+      max_age_days: 1               # 示例：只推送1天内的文章
+
+    - id: "Reuters-Business"
+      name: "Reuters Business"
+      url: "http://feeds.reuters.com/reuters/businessNews"
+      max_age_days: 1               # 示例：只推送1天内的文章
+
+    - id: "SPACENEWS"
+      name: "SpaceNews"
+      url: "https://spacenews.com/feed"
+      max_age_days: 1               # 示例：只推送1天内的文章
+
+    - id: "NASA Breaking News"
+      name: "NASA Breaking News"
+      url: "https://www.nasa.gov/rss/dyn/breaking_news.rss"
+      max_age_days: 1               # 示例：只推送1天内的文章
 
     # 自定义源示例
     # - id: "custom-feed"
